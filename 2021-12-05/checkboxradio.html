@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <style>
+  input[type='radio']:after {
+        width: 15px;
+        height: 15px;
+        border-radius: 15px;
+        top: -2px;
+        left: -1px;
+        position: relative;
+        background-color: #d1d3d1;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid white;
+    }
+    input[type='radio']:checked:after {
+        width: 15px;
+        height: 15px;
+        border-radius: 15px;
+        top: -2px;
+        left: -1px;
+        position: relative;
+        background-color: #ffa500;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid white;
+    }   input[type=checkbox]+label{
+            display:block;
+            curson:pointer;
+               
+        }
+        input[type=checkbox]
+        {
+            display:none;
+        }
+        input[type=checkbox]+label:before{
+            content:"\2714";
+            display:inline-block;
+            width:16px;
+            height:16px;
+            border:2px solid black;
+            color:transparent;
+            transition:2s;
+			}
+            input[type=checkbox]+label:active:before{
+            transform:scale(0);
+            }
+        input[type=checkbox]:checked+label:before{
+            background-color:green;
+            color:white;
+            padding-bottom:2px;
+        }
+      input[type=checkbox]:disabled+label:before{
+          background-color:pink;
+      }
+
+      
+        </style>
+    </head>
+    <body>
+        <input type="radio" name="disabled-radio"></input>
+        <label>orange</label>
+        <br></br>
+        <input type="radio" name="disabled-radio" ></input>
+        <label>banana</label>
+        <br></br>
+        <input type="radio" name="disabled-radio">apple</input>
+        <br></br>
+        <input type="checkbox" id="one" name="sai1" value="apple">
+        <label for="one">apple</label>
+        <input type="checkbox" id="two" name="sai2" value="banana"disabled>
+        <label for="two">banana<label>
+        <input type="checkbox" id="three" name="sai4" value="cherry">
+        <label for="three">cherry</label>
+        <input type="checkbox" id="four" name="sai4" value="mango" checked disabled>   
+         <label for="four">mango<label>
+    </body>
+</html>
