@@ -4,6 +4,7 @@
               .label{
                   display:inline-flex;
                   margin:5px;
+                  
               }
               .a{
                   display:none;
@@ -66,7 +67,7 @@
             border: 2px solid blue;
           }
           .div3{
-                width: 1.25em;mpx;
+                width: 1.25em;
                   height:1.25em;
                   border:2px solid gray;
                   border-radius:50%;
@@ -110,6 +111,96 @@
           .a:checked+.div4::after{
               transform:scale(1);
           }
+          .label1{
+            margin:5px;
+          }
+          .b{
+            display:none;
+          }
+        
+          .div5{
+            width:20px;
+            height:20px;
+            border:2px solid gray;
+            display:inline-flex;
+            padding:2px;
+           
+        
+          }
+          .b:checked+.div5::after{
+            content:"\2713";
+            width:20px;
+            height:20px;
+           position:fixed;
+          
+          }
+          .div5::after{
+                display:none;
+          }
+          .b:checked+.div5{
+            border:2px solid blue;
+          }
+          
+          .div6{
+              width:20px;
+              height:20px;
+              border:solid 2px gray;
+              display:inline-flex;
+              padding:2px; 
+         }
+         .b:checked+.div6::after{
+          content:"\2713";  
+          background-color:blue;
+          color:white;
+          width:20px;
+          height:20px;
+          position:fixed;
+         }
+        
+         .b:checked+.div6{
+          border:2px solid blue;
+         }
+         .div7{
+               width:20px;
+              height:20px;
+              border:solid 2px gray;
+              display:inline-flex; 
+              padding:2px;          
+         }
+       .b:checked+.div7::after{
+          content:"\2713";
+          position:fixed;
+          width:20px;
+          height:20px;
+          
+        }
+        .div7::after{
+          display:none;
+        }
+        .div8{
+          width:20px;
+          height:20px;
+          border:solid 2px gray;
+          padding:2px;
+          display:inline-flex;
+            
+        
+        }
+      
+         .b:checked+.div8::after{
+          content:"\2713";  
+          background-color:gray;
+          color:white;
+          width:20px;
+          height:20px;
+          position:fixed;
+        
+         
+         }
+         .b:checked+.div8{
+          border:2px solid gray;
+      
+      }
             </style>
 
     </head>
@@ -136,6 +227,29 @@
            <div class="div4"></div>
            checked+disabled
        </label>
-
+       <br></br>
+       <label class=label1>
+        <input type="checkbox" name="one" class="b"></input>
+       <div class="div5"></div>
+          checks
+       </label>
+       <label class="label1">
+         <input type="checkbox" name="one" class="b"></input>
+         <div class="div6"></div>
+          checked
+       </label>
+       
+       <br></br>
+       <label class="label1">
+         <input type="checkbox" name="one" class="b" ></input>
+         <div class= "div7"></div>
+         disabled
+       </label>
+       
+       <label class="label1">
+         <input type="checkbox" name="one" class="b"></input>
+         <div class="div8"></div>
+         disabled+checked
+       </label>
     </body>
 </html>
