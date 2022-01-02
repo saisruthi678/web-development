@@ -1,0 +1,161 @@
+
+
+body{
+    display:flex;
+    flex-direction: column;
+    height:100%;
+    padding:0px;
+    margin:0px;
+    font-family:arial,sans-serif;
+   
+}
+
+header{
+        display:flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-right:30px;
+       margin-top:20px;
+       height:60px;
+
+}
+header a{
+    font-size:13px;
+    display:inline-block;
+    color:#111;
+    cursor:pointer;
+    padding:5px;
+    padding-left: 6.7px;  
+    text-decoration: none;
+}
+header a:hover{
+    text-decoration: underline;
+}
+
+
+.circle{
+    width:20px;
+    padding:5px;
+    margin: 7px;
+    
+ 
+}
+.circle:hover{
+    background-color:#dadce0;
+    border-radius:30px;
+   
+    
+}   
+
+section{
+    flex:1; 
+}
+ .google{
+    display:block;
+    margin-top:107px;
+    margin: auto;
+    margin-bottom:30px;
+
+
+}
+.box{
+    position:relative;
+    width:584px;
+    margin:auto;
+    margin-top:-8px;
+    text-align:center;
+}
+.in{
+   display: block;
+   border:1px solid #ddd;
+   color:#111;
+   font-size: 16px;
+   padding: 13px;
+   padding-left: 45px;
+   border-radius:25px;
+   width:100%;
+   outline:none;
+}
+.in:hover{
+    box-shadow: 0px 0px 2px #dadce0;
+    border:1px solid #dadce0;
+}
+ .searchicon{
+    width:30px;
+    opacity:.8;
+    top:10px;
+    left:14px;
+    position:absolute;
+}
+ 
+.vsicon{
+        width:40px;
+        position:absolute;
+        top:13px;
+        right:24px;
+}
+.input{
+
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    padding:9px 15px;
+    color:#666;
+    font-size:14px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 28px;
+    outline:none;
+   
+   
+
+}
+.input:hover{
+    border:1px solid #dadce0;
+}
+ 
+.language
+{
+    margin-top: 30px;
+    text-align: center;
+    font-size:15px;
+    color:#111;
+    padding-right:40px;
+}
+a{
+    text-decoration: none;
+}
+.language a:hover{
+        text-decoration: underline;
+}
+footer{
+    background-color:#dadce0;
+  
+  }
+h4{
+    color:#666;
+    font-size:15px;
+    line-height:39.5px;
+    font-weight:400;
+    padding-left: 29px;
+    border-bottom: 1px solid #eee;
+    font-family:arial,sans-serif;
+   
+}
+footer a {
+    color:#666;
+    display:inline-block;
+    padding:12px 11.3px;
+    font-size:15px;
+    text-decoration:none;
+    font-family:arial,sans-serif;
+    
+}
+footer a:hover
+{
+    text-decoration: underline;
+}
+.link2
+{
+    float:right;
+  
+}
